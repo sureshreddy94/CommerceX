@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_add_card_container"
+    tools:context="com.kryptoblocks.commercex.payment.AddCardFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/fragment_signup_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@color/googleBlue"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/add_card_bckbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_marginLeft="5dp"
+            >
+        </ImageView>
+
+        <TextView
+
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="Add Card"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        android:background="@drawable/blue"
+        android:layout_marginTop="57dp">
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="100dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:id="@+id/card_vieww"
+        android:layout_gravity="center"
+        android:layout_margin="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:text="Card Number"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:paddingLeft="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="3dp"
+                android:paddingLeft="2dp"
+                android:textColor="@color/googleBlue"
+                android:textColorHint="@color/googleBlue"
+               android:hint="1234 1234 1234 1234"
+                android:textSize="16dp" />
+
+            <TextView
+                android:text="Name"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="1dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:paddingLeft="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="1dp"
+                android:paddingLeft="2dp"
+                android:textColor="@color/googleBlue"
+                android:textColorHint="@color/googleBlue"
+                android:hint="Robert Downey"
+                android:textSize="15dp" />
+
+            <TextView
+                android:text="Expired"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:paddingLeft="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5.5"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_mm"
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dropdown"/>
+
+                <Spinner
+                    android:id="@+id/spinner_year"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dropdown"/>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="CVV"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="30dp"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_credit_card_black_24dp"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="9dp"
+        android:id="@+id/save_card"
+        android:text="Save Card"
+        android:textColor="#fff"
+        android:background="@color/googleBlue"/>
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_attach_money_black_24dp"/>
+    <LinearLayout
+        android:id="@+id/rating_bar_rating_layout"
+        android:layout_width="200dp"
+        android:layout_height="5dip"
+        android:background="@color/colorGrey">
+        <View
+            android:id="@+id/rating_bar_percentage"
+            android:layout_width="100dip"
+            android:layout_height="5dip"
+            android:background="@drawable/main_background_shade">
+        </View>
+    </LinearLayout>
+
+</LinearLayout>

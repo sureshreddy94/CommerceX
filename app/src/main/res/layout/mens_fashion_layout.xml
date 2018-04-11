@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/curved_linear_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/main_background_shade">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Men's Wear"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="20dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Footwear"
+        android:textColor="@color/colorBlack"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:textColor="@color/colorDarkGrey" />
+    <TextView
+        android:id="@+id/mens_clothing_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clothing"
+        android:textColor="@color/colorBlack"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:textColor="@color/colorDarkGrey" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Watches"
+        android:textColor="@color/colorBlack"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:textColor="@color/colorDarkGrey" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bags, Luggage &amp; Wallets"
+        android:textColor="@color/colorBlack"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:textColor="@color/colorDarkGrey" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eyewear"
+        android:textColor="@color/colorBlack"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:textColor="@color/colorDarkGrey" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grooming &amp; Wellness"
+        android:textColor="@color/colorBlack"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:textColor="@color/colorDarkGrey" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragrances"
+        android:textColor="@color/colorBlack"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>
+
+</LinearLayout>

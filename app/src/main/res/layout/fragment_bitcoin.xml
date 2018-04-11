@@ -1,0 +1,532 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_bitcoin_container"
+    android:orientation="vertical"
+    tools:context="com.kryptoblocks.commercex.payment.BitcoinFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_bit"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/googleBlue"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="#ffffff">
+
+    </android.support.v7.widget.Toolbar>
+    <!--<LinearLayout
+        android:id="@+id/fragment_signup_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@color/googleBlue"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/bitcoin_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_marginLeft="3dp"
+            >
+        </ImageView>
+
+        <TextView
+
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Bitcoin Payment"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="3dp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="Checkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/copyright_paypal"
+        android:text="Thankyou. Your order has been received."
+        android:textColor="#9f7f90"
+        android:textSize="13dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="4dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/order_bitcoin"
+            android:text="Order:"
+            android:textColor="#9f7f90"
+            android:textSize="13dp"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_bitcoin"
+            android:text="Date:"
+            android:textColor="#9f7f90"
+            android:textSize="13dp"
+            android:layout_marginLeft="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/total_bitcoin"
+            android:text="Total:"
+            android:textColor="#9f7f90"
+            android:textSize="13dp"
+            android:layout_marginLeft="55dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bitpay_bitcoin"
+            android:text="Payment Method:"
+            android:textColor="#9f7f90"
+            android:textSize="13dp"
+            android:layout_marginLeft="70dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:layout_marginLeft="8dp"
+            android:text="#67"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:layout_marginLeft="35dp"
+            android:text="Janauary 5,\n 2019"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:layout_marginLeft="20dp"
+            android:text="60.00 $"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:layout_marginLeft="60dp"
+            android:text="Bitcoin/Altcoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <TextView
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="5dp"
+        android:text="Pay now:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selct_pay_meth"
+        android:text="Select Payment Method :"
+        android:gravity="center"
+        android:textColor="#9f7f90"
+        android:textSize="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="4dp"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="9">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/bit" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:text="Bitcoin" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/bitcoin" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:text="Bit cash" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/lite" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:text="Litecoin" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/dash" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:text="Dashcoin" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/doge" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:text="Dogecoin" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/speed" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:text="Speedcoin" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/rdd" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:text="Reddcoin" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/pot" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:text="Potcoin" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/feather" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:text="Feathercoin" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Language" />
+        <Spinner
+            android:layout_width="30dp"
+            android:layout_height="wrap_content">
+        </Spinner>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/bitpay"/>
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:text="Click here if you have already sent Bitcoins"
+            android:drawableRight="@drawable/ic_play_arrow_black_24dp"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:textColor="#757575"
+            android:background="#FAFAFA"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+        <TextView
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Order Details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+       <TableLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="2">
+
+
+           <TableRow>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="30dp"
+                   android:layout_weight="1"
+                   android:text="Product"
+                   android:paddingTop="5dp"
+                   android:textSize="15dp"
+                   android:textStyle="italic"
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="30dp"
+                   android:layout_weight="1"
+                   android:text="Total"
+                   android:paddingTop="5dp"
+                   android:textSize="15dp"
+                   android:textStyle="italic"
+                   />
+           </TableRow>
+           <TableRow>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="30dp"
+                   android:layout_weight="1"
+                   android:text="T-shirt * 1"
+                   android:paddingTop="5dp"
+                   android:textSize="15dp"
+                   android:textStyle="italic"
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="30dp"
+                   android:layout_weight="1"
+                   android:text="25.00 $"
+                   android:paddingTop="5dp"
+                   android:textSize="15dp"
+                   android:textStyle="italic"
+                   />
+           </TableRow>
+           <TableRow>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="30dp"
+                   android:layout_weight="1"
+                   android:text="Cart Subtotal:"
+                   android:paddingTop="5dp"
+                   android:textSize="15dp"
+                   android:textStyle="italic"
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="30dp"
+                   android:layout_weight="1"
+                   android:text="25.00 $"
+                   android:paddingTop="5dp"
+                   android:textSize="15dp"
+                   android:textStyle="italic"
+                   />
+           </TableRow>
+           <TableRow>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="30dp"
+                   android:layout_weight="1"
+                   android:text="Shipping:"
+                   android:paddingTop="5dp"
+                   android:textSize="15dp"
+                   android:textStyle="italic"
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="30dp"
+                   android:layout_weight="1"
+                   android:text="Free Shipping"
+                   android:paddingTop="5dp"
+                   android:textSize="15dp"
+                   android:textStyle="italic"
+                   />
+           </TableRow>
+           <TableRow>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="30dp"
+                   android:layout_weight="1"
+                   android:text="Payment Method:"
+                   android:paddingTop="5dp"
+                   android:textSize="15dp"
+                   android:textStyle="italic"
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="30dp"
+                   android:layout_weight="1"
+                   android:text="Bitcoin/Altcoin"
+                   android:paddingTop="5dp"
+                   android:textSize="15dp"
+                   android:textStyle="italic"
+                   />
+           </TableRow>
+           <TableRow>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="30dp"
+                   android:layout_weight="1"
+                   android:text="Order Total"
+                   android:paddingTop="5dp"
+                   android:textSize="15dp"
+                   android:textStyle="italic"
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="30dp"
+                   android:layout_weight="1"
+                   android:text="25.00 $"
+                   android:paddingTop="5dp"
+                   android:textSize="15dp"
+                   android:textStyle="italic"
+                   />
+           </TableRow>
+
+       </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

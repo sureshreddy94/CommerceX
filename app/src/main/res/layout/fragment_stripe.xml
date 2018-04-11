@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:stripe="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/fragment_stripe_container"
+    tools:context="com.kryptoblocks.commercex.payment.StripeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/fragment_signup_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@color/googleBlue"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/stripe_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_marginLeft="5dp"
+            >
+        </ImageView>
+
+        <TextView
+
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Stripe Payment"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="4dp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <com.stripe.android.view.CardMultilineWidget
+        android:id="@+id/card_multiline_widget"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed to Pay"
+        android:layout_margin="5dp"
+        android:textColor="#fff"
+        android:id="@+id/proceed_to_pay"
+        android:background="@drawable/main_drawable_shade"/>
+
+
+</LinearLayout>

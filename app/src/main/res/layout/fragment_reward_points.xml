@@ -1,0 +1,353 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_reward_points_container"
+    tools:context="com.kryptoblocks.commercex.payment.RewardPointsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_reward"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/googleBlue"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="#ffffff">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/reward_coin"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_error_outline_black_24dp"
+            android:layout_marginLeft="170dp"
+            />
+
+    </android.support.v7.widget.Toolbar>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:orientation="vertical"
+        android:background="@drawable/blue">
+
+        <ImageView
+            android:id="@+id/rwrd"
+            android:layout_width="180dp"
+            android:layout_height="192dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_reward_points"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/curent_balance"
+            android:text="Your Current Balance"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_marginTop="4dp"
+            />
+        <View
+            android:layout_width="80dp"
+            android:layout_height="1dp"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/balancee"
+            android:text="1000"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_marginTop="2dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/balanceee"
+            android:text="Reward Points"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_marginBottom="3dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/piechart"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                   />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+            <View
+                android:layout_width="40dp"
+                android:layout_height="2dp"
+                android:background="@color/googleBlue" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Merchant1"
+                        android:textSize="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="2dp"
+                        android:background="@color/googleBlue" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Merchant2"
+                        android:textSize="10dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="2dp"
+                        android:background="@color/googleBlue" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Merchant3"
+                        android:textSize="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="2dp"
+                        android:background="@color/googleBlue" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Merchant4"
+                        android:textSize="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="2dp"
+                        android:background="@color/googleBlue" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Merchant5"
+                        android:textSize="10dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="2dp"
+                        android:background="@color/googleBlue" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Merchant6"
+                        android:textSize="10dp"/>
+
+                </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="4dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:id="@+id/rew_mercnt_details"
+                android:layout_gravity="center"
+                android:layout_margin="5dp">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                         android:layout_gravity="center">
+                        <TextView
+                            android:text="Reward Points : 500 points"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:gravity="center"
+                            android:paddingLeft="2dp"
+                            android:textStyle="bold"
+                            android:textSize="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:paddingLeft="2dp"
+                            android:gravity="center"
+                            android:layout_marginTop="3dp"
+                            android:text="Merchant Name : Merchant1"
+                            android:textSize="15dp" />
+
+                    <TextView
+                        android:text="Reward Points : 250 points"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:gravity="center"
+                        android:paddingLeft="2dp"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:paddingLeft="2dp"
+                        android:gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:text="Merchant Name : Merchant2"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:text="Reward Points : 100 points"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:gravity="center"
+                        android:paddingLeft="2dp"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:paddingLeft="2dp"
+                        android:gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:text="Merchant Name : Merchant3"
+                        android:textSize="15dp" />
+                    </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:id="@+id/card_wallet"
+                android:layout_gravity="center"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/googleBlue"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:text="Watch Video To Earn Points"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:paddingLeft="2dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="#fff"
+                            android:textSize="18dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ic_chevron_right_black_24dp"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

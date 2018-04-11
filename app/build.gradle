@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.kryptoblocks.commercex"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:support-v4:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    //for cardview
+    implementation 'com.android.support:cardview-v7:26.1.0'
+
+    //for SliderLayout
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+
+    //circular image
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+
+    //navigation drawer
+    compile 'com.android.support:design:26.1.0'
+
+    //glide
+    compile 'com.github.bumptech.glide:glide:4.0.0'
+
+
+    compile 'com.android.support:multidex:1.0.3'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.7'
+    compile 'com.android.support:cardview-v7:26.1.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+    compile 'com.github.bumptech.glide:glide:4.0.0'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.9.0'
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'com.squareup.okhttp:okhttp:2.7.2'
+    // compile 'com.google.firebase:firebase-core:11.0.1'
+    // compile 'com.google.firebase:firebase-messaging:11.0.1'
+    compile 'com.google.firebase:firebase-core:12.0.1'
+    compile 'com.google.firebase:firebase-messaging:12.0.1'
+    compile 'com.google.android.gms:play-services-auth:12.0.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    //gmail sign in
+    compile 'com.google.android.gms:play-services-auth:12.0.1'
+
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.bumptech.glide:glide:4.0.0'
+
+    //fb
+    implementation 'com.facebook.android:facebook-login:4.31.0'
+
+    //qr code scanner
+    compile 'com.journeyapps:zxing-android-embedded:3.5.0'
+
+
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+
+
+    compile 'com.android.support:cardview-v7:26.1.0'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+
+    compile 'com.craftman.cardform:cardform:0.0.2'
+    compile 'com.github.PhilJay:MPAndroidChart:v2.2.4'
+    compile 'com.stripe:stripe-android:6.1.1'
+    compile 'com.parse:parse-android:1.16.3'
+    compile 'com.paypal.sdk:paypal-android-sdk:2.14.2'
+}
